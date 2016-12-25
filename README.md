@@ -7,18 +7,18 @@ and jquery-simple_ajax can do the rest.
 Get to Start.
 -----------------------------------
 To get to start, You need download jquery and then jquery-simple_ajax.
-*Add to your Project jquery.js
-*Add to your Project jquery-simple_ajax.js  
-*Add to your Project jquery-simple_ajax.css
+* Add to your Project jquery.js
+* Add to your Project jquery-simple_ajax.js  
+* Add to your Project jquery-simple_ajax.css
 ---
 Using functions from Plugin.
 -----------------------------------
 ###1. Paging function $.fn.xhrPagination(paging_data, xhr_data).
-*Required Paging_data.sel(in this Selector created pages links)
-*Required Paging_data.totalCount(Counts data rows)
-*Required Paging_data.items(Rows in one Page)
-*Required xhr_data.url
-*Required xhr_data.dataLP{offset and items}
+* Required Paging_data.sel(in this Selector created pages links)
+* Required Paging_data.totalCount(Counts data rows)
+* Required Paging_data.items(Rows in one Page)
+* Required xhr_data.url
+* Required xhr_data.dataLP{offset and items}
 ***
 Call function:
 ```html
@@ -48,8 +48,8 @@ var formData = $.getFormData(formName);
 ```
 ---
 ###3. Function $.simpleSendData(url, data).
-*Required url-argument
-*Required data-argument
+* Required url-argument
+* Required data-argument
 ****
 Call function:
 ```html
@@ -59,8 +59,8 @@ var data = {your data};
 ```
 ---
 ###4. Function $.sendDataGetJSON(url, data).
-*Required url-argument.
-*Not required data-argument.
+* Required url-argument.
+* Not required data-argument.
 ****
 Call function:
 ```html
@@ -70,9 +70,9 @@ var data = {your data};
 ```
 ---
 ###5.Function $.fn.sendFromDataloadPage(formName, url).
-*Required selector.
-*Required formName-argument.
-*If isset form->attribute(action), "url"-argument is not required.
+* Required selector.
+* Required formName-argument.
+If isset form->attribute(action), "url"-argument is not required.
 ***
 Call function:
 if isset form attribute action, then var url = 0;
@@ -83,9 +83,9 @@ Then sendFromDataloadPage() function, get value: inputs,select,textarea,checkbox
 And then make AJAX request to server AND success function make load page to $(this->selector).
 ---
 ###6. Function $.fn.sendloadPage(url, data).
-*Required is url-argument.
-*Required selector.
-*Not required data-argument.
+* Required is url-argument.
+* Required selector.
+* Not required data-argument.
 ***
 Call function:
 ```html
