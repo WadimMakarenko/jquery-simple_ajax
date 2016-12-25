@@ -11,6 +11,7 @@ To get to start, You need download jquery and then jquery-simple_ajax.
 * Add to your Project jquery-simple_ajax.js  
 * Add to your Project jquery-simple_ajax.css
 ---
+
 Using functions from Plugin.
 -----------------------------------
 ###1. Paging function $.fn.xhrPagination(paging_data, xhr_data).
@@ -19,7 +20,7 @@ Using functions from Plugin.
 * Required Paging_data.items(Rows in one Page)
 * Required xhr_data.url
 * Required xhr_data.dataLP{offset and items}
-***
+---
 Call function:
 ```html
 function yorFunctionName(offset_data){
@@ -41,7 +42,7 @@ function yorFunctionName(offset_data){
 ###2. Function $.getFormData(formName)
 Return value inputs from form.
 * Required formName.
-***
+---
 Use function:
 ```html
 var formData = $.getFormData(formName);
@@ -50,7 +51,7 @@ var formData = $.getFormData(formName);
 ###3. Function $.simpleSendData(url, data).
 * Required url-argument
 * Required data-argument
-****
+---
 Call function:
 ```html
 var url = "your url";
@@ -61,7 +62,7 @@ var data = {your data};
 ###4. Function $.sendDataGetJSON(url, data).
 * Required url-argument.
 * Not required data-argument.
-****
+---
 Call function:
 ```html
 var url = "your url";
@@ -73,7 +74,7 @@ var data = {your data};
 * Required selector.
 * Required formName-argument.
 If isset form->attribute(action), "url"-argument is not required.
-***
+---
 Call function:
 if isset form attribute action, then var url = 0;
 ```html
@@ -86,7 +87,7 @@ And then make AJAX request to server AND success function make load page to $(th
 * Required is url-argument.
 * Required selector.
 * Not required data-argument.
-***
+---
 Call function:
 ```html
 var url = "your url";
