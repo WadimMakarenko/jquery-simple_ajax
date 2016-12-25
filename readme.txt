@@ -1,4 +1,4 @@
-**********************************************************Documentation jquery-ajax-plugin******************************************************
+************************************************Documentation jquery-ajax-plugin******************************************************
 *Function name.
 *Requirements functions.
 *Parameters functions.
