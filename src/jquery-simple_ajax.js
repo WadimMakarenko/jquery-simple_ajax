@@ -42,7 +42,7 @@
         //create page links
         if(isInt(paging_data.totalCount)){
             $('.xhr_pagination').remove();
-            var totalNum = $(paging_data.totalCount).val();
+            var totalNum = paging_data.totalCount;
             var pages = Math.ceil(totalNum/paging_data.items);//return to $this page.
 
             var offset = 0;
