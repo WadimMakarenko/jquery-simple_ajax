@@ -142,6 +142,34 @@
         }
     };
     /******************************************************************************************************************/
+    /************************************AJAX send data(or empty data) and get JSONP – Cross Server Data .**********************/
+    $.getDataJSONP = function(url, data) {
+        if(url !== false) {
+
+            var $items = {};
+            $.ajax({
+                type: 'GET',
+                url: url,
+                data: data,
+                dataType: 'jsonp',
+                jsonp: false,
+                jsonpCallback: "myJsonMethod",
+                success: function (data) {
+                    $.each(data, function(key, val) {
+                        $items[key] = (val);
+                        //$items.push(val);
+                    });
+                    console.log("Complete!");
+                }
+            });
+            return $items;
+        }else{
+            console.log("URL Undefined!");
+            return "URL Undefined!";
+        }
+    };
+
+    /***************************************************************************************************************************/
 
     /********************************AJAX send data(or empty data) and get JSON data from server.**********************/
     $.sendDataGetJSON = function(url, data) {
